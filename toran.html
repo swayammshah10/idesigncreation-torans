@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>I-DESIGN</title>
+		<link rel="stylesheet" href="toran.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<header>
+				<h1>I-DESIGN CREATIONS...</h1>
+				<p>  ~ Eva Shah, Nisha Shah</p>
+				
+				<nav class="site-nav">
+					<ul class="group">
+						<li><a href="file:///C:/Users/lenovo/Desktop/Personal%20Project/index.html">Home</a></li>
+						<li><a>Portfolio</a>   
+							<ul>                                
+								<li><a href="file:///C:/Users/lenovo/Desktop/Personal%20Project/hamper.html">Hampers &amp; Gifts</a></li>                                
+								<li><a href="file:///C:/Users/lenovo/Desktop/Personal%20Project/toran.html">Torans</a></li>
+								<li><a href="file:///C:/Users/lenovo/Desktop/Personal%20Project/boquet.html">Bouquets</a></li>
+							</ul>
+						</li>
+						<li><a href="file:///C:/Users/lenovo/Desktop/Personal%20Project/contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<div class="content-area group">
+				
+				<div class="main-area">
+					<h2>TORANS</h2>
+					
+				</div>
+				<br>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 7</div>
+                      <img class="meriphoto" src="torans/1.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 7</div>
+                      <img class="meriphoto" src="torans/2.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 7</div>
+                      <img class="meriphoto" src="torans/3.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 7</div>
+                      <img class="meriphoto" src="torans/4.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 7</div>
+                      <img class="meriphoto" src="torans/5.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">6 / 7</div>
+                      <img class="meriphoto" src="torans/6.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">7 / 7</div>
+                      <img class="meriphoto" src="torans/7.jpg" style="width:100%">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                     
+                    
+                    
+                    
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                      <span class="dot" onclick="currentSlide(5)"></span> 
+                      <span class="dot" onclick="currentSlide(6)"></span> 
+                      <span class="dot" onclick="currentSlide(7)"></span> 
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="details">
+                    <h3 class="rotate">Details...</h3>
+                    <div class="detail">
+                        <p>
+                            Namaste... Openly welcoming guests into house is known as a very good gesture. Torans can help the welcoming be more delightful, creative and unique. 
+                        </p>
+                        <p>
+                            Torans can be put up on any door, the main gate or the temple gate. Widths of each gate differ majorly, where we have an option for you all for any flowers you would like and any size one desires. Torans accompanied by hangings makes the welcome even more merry.
+                        </p>
+                    </div>
+                </div>
+
+                    <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+                <br>
+			</div>
+
+			<footer>
+				<p>I-DESIGN</p>
+			</footer>
+		</div>
+		
+	</body>
+	
+</html>

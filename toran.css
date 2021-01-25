@@ -1,0 +1,291 @@
+html {
+	background-image: url(background.jpg);
+    background-size: cover;
+    margin-top: 8px;
+}
+
+body {
+	font-family: Tahoma, sans-serif;
+	font-size: 87%;
+}
+
+.container {
+	width: 1240px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding-left: 100px;
+	padding-right: 100px;
+    padding-top: 15px;
+	box-sizing: border-box;
+    opacity: 95%;
+}
+
+header {
+	padding-top: 20px;
+	color: #617140;
+}
+
+header h1 {
+	margin: 0;
+	font-weight: normal;
+	font-size: 250%;
+}
+
+h2 {
+    font-size: 200%;
+    text-shadow: 0 1px 0 #ccc,
+               0 1px 0 #c9c9c9,
+               0 1.5px 0 #bbb,
+               0 2px 0 #b9b9b9,
+               0 2.5px 0 #aaa,
+               0 3px 1px rgba(0,0,0,.1),
+               0 0 2.5px rgba(0,0,0,.1),
+               0 0.5px 1.5px rgba(0,0,0,.3),
+               0 1.5px 2.5px rgba(0,0,0,.2),
+               0 2.5px 5px rgba(0,0,0,.25),
+               0 5px 5px rgba(0,0,0,.2),
+               0 10px 10px rgba(0,0,0,.15);
+}
+
+h3 {
+  font-size: 50px;
+   writing-mode: vertical-lr;
+  text-align: center;
+  line-height: .9;
+    font-style: oblique;
+    color: #000;
+    text-decoration: underline;
+}
+
+.rotate {
+   transform: rotate(180deg);
+}
+
+.details {
+    margin-top: 75px;
+    margin-bottom: 120px;
+    float: left;
+  display: grid;
+  height: 100px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: max-content max-content;
+}
+
+h3:hover {
+    transition: 0.5s;
+    background-color: #90cb99;
+}
+
+.detail {
+    margin-left: -20px;
+    font-size: 22px;
+    background-color: aliceblue;
+    width: 900px;
+    text-align: justify;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+header p {
+	margin: 0;
+    font-size: 120%;
+}
+
+.site-nav {
+	margin-top: 20px;
+}
+
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+}
+
+.site-nav a {
+	display: block;
+	color: #617140;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 3px solid #e5e9dc;
+	border-bottom: none;
+}
+
+.site-nav li:hover > a,
+.site-nav a:hover {
+	background-color: #e5e9dc;
+}
+
+.site-nav li ul {
+	position: absolute;
+	left: -9999px;
+	background-color: #e5e9dc;
+	box-shadow: 7px 7px 7px -7px rgba(0, 0, 0, .6);
+	z-index: 9999;
+}
+
+.site-nav li:hover ul {
+	left: auto;
+}
+
+.site-nav li li {
+	float: none;
+	margin-right: 0;
+}
+
+.site-nav li li a:hover {
+	background-color: #869960;
+	color: #FFF;
+}
+
+
+
+.content-area {
+	border-top: 3px solid #e5e9dc;
+	border-bottom: 3px solid #e5e9dc;
+}
+
+.main-area {
+	width: 66%;
+	float: left;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+footer {
+	text-align: center;
+	font-size: 85%;
+	color: #999;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.fix {
+	clear: both;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}
+
+/* slides */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: black;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+    font-weight: bold;
+}
+
+.meriphoto {
+    height: 450px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    margin-top: 40px;
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+    font-weight: bold;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #e5e9dc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #617140;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
